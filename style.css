@@ -1,0 +1,372 @@
+html,
+body {
+  font-family: Sans-Serif;
+  background-color: #000000;
+  color: #FFFFFFcc;
+  margin: 0;
+  border: 0;
+}
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@media screen and (min-width: 800px) {
+  body > nav {
+    background-color: #191919;
+  }
+  .dropdown {
+    padding: 16px 8px;
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    border-radius: 12px;
+    background-color: #191919;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown .dropdown-content li {
+    display: block;
+    padding: 8px 16px;
+  }
+  .dropdown .dropdown-content li a {
+    text-decoration: none;
+    color: #FFFFFFcc;
+  }
+  .dropdown .dropdown-content li:hover { 
+    background-color: black;
+    border-radius: 24px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  body > div.dropdown > span {
+    padding: 16px 8px;
+  }
+  body > div.dropdown > span > img {
+    background-color: #191919;
+    border-radius: 50%;
+  }
+  body > div.content {
+    background-color: #191919;
+    border-radius: 0px;
+    width: 98.8%;
+    text-align: center;
+    padding: 16px 8px;  
+  }
+  body > div.content#cafe {
+    background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fcoffe-banner-bg.webp?v=1628743637199");
+    background-size: cover;
+  }
+  body > div.content#almoco {
+    background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fthumbnails%2Fbanner(2).webp?1628747766455");
+    background-size: cover;
+  }
+  body > div.content#janta {
+    background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fthumbnails%2Fjanta-banner.webp?1628749253749");
+    background-size: cover;
+  }
+  body > div.content#sobremesa {
+    background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fthumbnails%2Fbanner(1).webp?1628747760878");
+    background-size: cover;
+  }
+  body > div.content > a {
+    text-decoration: none;
+    color: #ffffffcc;
+  }
+  body > div.content > a:hover {
+    text-decoration: underline;
+  }
+  body > div.img-bg > img {
+    width: 100%
+  }
+    body > div.content#rock {
+        background-image: url(images/music-banner.png);
+        background-size: cover;
+    }
+    body > div.content#funk {
+        background-image: url(images/music-banner.png);
+        background-size: cover;
+    }
+    body > div.content#pop {
+        background-image: url(images/music-banner.png);
+        background-size: cover;
+    }
+    body > div.content#hip-hop {
+        background-image: url(images/music-banner.png);
+        background-size: cover;
+    }
+    body > div.content > div.fazer {
+      padding: 5px;
+      border-radius: 16px;
+      background-color: #000000;
+    }
+}
+@media screen and (max-width: 800px) {
+  body > nav {
+    background-color: #191919;
+    width: 100%;
+  }
+  .dropdown {
+    padding: 16px 8px;
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    border-radius: 12px;
+    background-color: #191919;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown .dropdown-content li {
+    display: block;
+    padding: 8px 16px;
+  }
+  .dropdown .dropdown-content li a {
+    text-decoration: none;
+    color: #FFFFFFcc;
+  }
+  .dropdown .dropdown-content li:hover { 
+    background-color: black;
+    border-radius: 24px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  body > div.dropdown > span {
+    padding: 16px 8px;
+  }
+  body > div.dropdown > span > img {
+    background-color: #191919;
+    border-radius: 50%;
+  }
+  body > div.content {
+    background-color: #191919;
+    border-radius: 24px;
+    width: 96%;
+    text-align: center;
+    padding: 16px 8px;  
+  }
+  body > div.content#cafe {
+    background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fcoffe-banner-bg.webp?v=1628743637199");
+    background-size: cover;
+  }
+  body > div.content#almoco {
+    background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fthumbnails%2Fbanner(2).webp?1628747766455");
+    background-size: cover;
+  }
+  body > div.content#janta {
+    background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fthumbnails%2Fjanta-banner.webp?1628749253749");
+    background-size: cover;
+  }
+  body > div.content#sobremesa {
+    background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fthumbnails%2Fbanner(1).webp?1628747760878");
+    background-size: cover;
+  }
+  body > div.content > a {
+    text-decoration: none;
+    color: #ffffffcc;
+  }
+  body > div.content > a:hover {
+    text-decoration: underline;
+  }
+  body > div.img-bg > img {
+    width: 100%
+  }
+    body > div.content#rock {
+        background-image: url(images/music-banner.png);
+        background-size: cover;
+    }
+    body > div.content#funk {
+        background-image: url(images/music-banner.png);
+        background-size: cover;
+    }
+    body > div.content#pop {
+        background-image: url(images/music-banner.png);
+        background-size: cover;
+    }
+    body > div.content#hip-hop {
+        background-image: url(images/music-banner.png);
+        background-size: cover;
+    }
+    body > div.content > div.fazer {
+      padding: 5px;
+      border-radius: 16px;
+      background-color: #000000;
+    }
+}
+@media screen and (min-width: 1120px) {
+  body > nav {
+    background-color: #191919;
+  }
+  .dropdown {
+    padding: 16px 8px;
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    border-radius: 12px;
+    background-color: #191919;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown .dropdown-content li {
+    display: block;
+    padding: 8px 16px;
+  }
+  .dropdown .dropdown-content li a {
+    text-decoration: none;
+    color: #FFFFFFcc;
+  }
+  .dropdown .dropdown-content li:hover { 
+    background-color: black;
+    border-radius: 24px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  body > div.dropdown > span {
+    padding: 16px 8px;
+  }
+  body > div.dropdown > span > img {
+    background-color: #191919;
+    border-radius: 50%;
+  }
+  body > div.content {
+    background-color: #191919;
+    border-radius: 24px;
+    width: 98.8%;
+    text-align: center;
+    padding: 16px 8px;  
+  }
+  body > div.content#cafe {
+    background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fcoffe-banner-bg.webp?v=1628743637199");
+    background-size: cover;
+  }
+  body > div.content#almoco {
+    background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fthumbnails%2Fbanner(2).webp?1628747766455");
+    background-size: cover;
+  }
+  body > div.content#janta {
+    background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fthumbnails%2Fjanta-banner.webp?1628749253749");
+    background-size: cover;
+  }
+  body > div.content#sobremesa {
+    background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fthumbnails%2Fbanner(1).webp?1628747760878");
+    background-size: cover;
+  }
+  body > div.content > a {
+    text-decoration: none;
+    color: #ffffffcc;
+  }
+  body > div.content > a:hover {
+    text-decoration: underline;
+  }
+  body > div.img-bg > img {
+    width: 100%
+  }
+    body > div.content#rock {
+        background-image: url(images/music-banner.png);
+        background-size: cover;
+    }
+    body > div.content#funk {
+        background-image: url(images/music-banner.png);
+        background-size: cover;
+    }
+    body > div.content#pop {
+        background-image: url(images/music-banner.png);
+        background-size: cover;
+    }
+    body > div.content#hip-hop {
+        background-image: url(images/music-banner.png);
+        background-size: cover;
+    }
+    body > div.content > div.fazer {
+      padding: 5px;
+      border-radius: 16px;
+      background-color: #000000;
+    }
+}
+/*ᵔᴥᵔ hi! i got you. đ?ŧø
