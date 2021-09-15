@@ -6,7 +6,9 @@ body {
   margin: 0;
   border: 0;
 }
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 .slideshow-container {
   max-width: 1000px;
@@ -16,7 +18,8 @@ body {
 .mySlides {
   display: none;
 }
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -34,8 +37,9 @@ body {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .text {
   color: #f2f2f2;
@@ -55,15 +59,16 @@ body {
 }
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 7px;
+  width: 7px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 .fade {
@@ -73,60 +78,37 @@ body {
   animation-duration: 1.5s;
 }
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 800px) {
   body > nav {
+    width: 100%;
     background-color: #191919;
-  }
-  .dropdown {
-    padding: 16px 8px;
-    position: relative;
+    padding: 8px 16px;
     display: inline-block;
   }
-  .dropdown-content {
-    border-radius: 12px;
-    background-color: #191919;
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-  }
-  .dropdown .dropdown-content li {
-    display: block;
-    padding: 8px 16px;
-  }
-  .dropdown .dropdown-content li a {
-    text-decoration: none;
-    color: #FFFFFFcc;
-  }
-  .dropdown .dropdown-content li:hover { 
-    background-color: black;
-    border-radius: 24px;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  body > div.dropdown > span {
-    padding: 16px 8px;
-  }
-  body > div.dropdown > span > img {
-    background-color: #191919;
-    border-radius: 50%;
+  body > nav > div.dn-content {
+    display: hidden;
   }
   body > div.content {
     background-color: #191919;
     border-radius: 0px;
-    width: 98.8%;
+    width: 100%;
     text-align: center;
-    padding: 16px 8px;  
+    padding: 16px 8px;
   }
   body > div.content#cafe {
     background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fcoffe-banner-bg.webp?v=1628743637199");
@@ -152,78 +134,39 @@ body {
     text-decoration: underline;
   }
   body > div.img-bg > img {
-    width: 100%
+    width: 100%;
   }
-    body > div.content#rock {
-        background-image: url(images/music-banner.png);
-        background-size: cover;
-    }
-    body > div.content#funk {
-        background-image: url(images/music-banner.png);
-        background-size: cover;
-    }
-    body > div.content#pop {
-        background-image: url(images/music-banner.png);
-        background-size: cover;
-    }
-    body > div.content#hip-hop {
-        background-image: url(images/music-banner.png);
-        background-size: cover;
-    }
-    body > div.content > div.fazer {
-      padding: 5px;
-      border-radius: 16px;
-      background-color: #000000;
-    }
+  body > div.content > div.fazer {
+    padding: 5px;
+    border-radius: 16px;
+    background-color: #000000;
+  }
+  body > div.contcat {
+    text-align: center;
+  }
+  body > div.contcat > div.cat {
+    border-style: solid;
+    padding: 8px 48px;
+    border-radius: 10px;
+  }
+  body > div.contcat > div.cat > a {
+    text-decoration: none;
+    color: #ffffffcc;
+  }
 }
 @media screen and (max-width: 800px) {
   body > nav {
-    background-color: #191919;
     width: 100%;
-  }
-  .dropdown {
-    padding: 16px 8px;
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-content {
-    border-radius: 12px;
     background-color: #191919;
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-  }
-  .dropdown .dropdown-content li {
-    display: block;
     padding: 8px 16px;
-  }
-  .dropdown .dropdown-content li a {
-    text-decoration: none;
-    color: #FFFFFFcc;
-  }
-  .dropdown .dropdown-content li:hover { 
-    background-color: black;
-    border-radius: 24px;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  body > div.dropdown > span {
-    padding: 16px 8px;
-  }
-  body > div.dropdown > span > img {
-    background-color: #191919;
-    border-radius: 50%;
+    display: inline-block;
   }
   body > div.content {
     background-color: #191919;
-    border-radius: 24px;
-    width: 96%;
+    border-radius: 0px;
+    width: 100%;
     text-align: center;
-    padding: 16px 8px;  
+    padding: 16px 8px;
   }
   body > div.content#cafe {
     background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fcoffe-banner-bg.webp?v=1628743637199");
@@ -249,77 +192,42 @@ body {
     text-decoration: underline;
   }
   body > div.img-bg > img {
-    width: 100%
+    width: 100%;
   }
-    body > div.content#rock {
-        background-image: url(images/music-banner.png);
-        background-size: cover;
-    }
-    body > div.content#funk {
-        background-image: url(images/music-banner.png);
-        background-size: cover;
-    }
-    body > div.content#pop {
-        background-image: url(images/music-banner.png);
-        background-size: cover;
-    }
-    body > div.content#hip-hop {
-        background-image: url(images/music-banner.png);
-        background-size: cover;
-    }
-    body > div.content > div.fazer {
-      padding: 5px;
-      border-radius: 16px;
-      background-color: #000000;
-    }
+  body > div.content > div.fazer {
+    padding: 5px;
+    border-radius: 16px;
+    background-color: #000000;
+  }
+  body > div.contcat {
+    text-align: center;
+  }
+  body > div.contcat > div.cat {
+    border-style: solid;
+    padding: 8px 48px;
+    border-radius: 10px;
+  }
+  body > div.contcat > div.cat > a {
+    text-decoration: none;
+    color: #ffffffcc;
+  }
 }
 @media screen and (min-width: 1120px) {
   body > nav {
+    width: 100%;
     background-color: #191919;
-  }
-  .dropdown {
-    padding: 16px 8px;
-    position: relative;
+    padding: 8px 16px;
     display: inline-block;
   }
-  .dropdown-content {
-    border-radius: 12px;
-    background-color: #191919;
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-  }
-  .dropdown .dropdown-content li {
-    display: block;
-    padding: 8px 16px;
-  }
-  .dropdown .dropdown-content li a {
-    text-decoration: none;
-    color: #FFFFFFcc;
-  }
-  .dropdown .dropdown-content li:hover { 
-    background-color: black;
-    border-radius: 24px;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  body > div.dropdown > span {
-    padding: 16px 8px;
-  }
-  body > div.dropdown > span > img {
-    background-color: #191919;
-    border-radius: 50%;
+  body > nav > div.dn-content {
+    display: hidden;
   }
   body > div.content {
     background-color: #191919;
-    border-radius: 24px;
-    width: 98.8%;
+    border-radius: 0px;
+    width: 100%;
     text-align: center;
-    padding: 16px 8px;  
+    padding: 16px 8px;
   }
   body > div.content#cafe {
     background-image: url("https://cdn.glitch.com/ad00d6cb-9da7-4054-b164-a2ad3c4d06eb%2Fcoffe-banner-bg.webp?v=1628743637199");
@@ -345,28 +253,24 @@ body {
     text-decoration: underline;
   }
   body > div.img-bg > img {
-    width: 100%
+    width: 100%;
   }
-    body > div.content#rock {
-        background-image: url(images/music-banner.png);
-        background-size: cover;
-    }
-    body > div.content#funk {
-        background-image: url(images/music-banner.png);
-        background-size: cover;
-    }
-    body > div.content#pop {
-        background-image: url(images/music-banner.png);
-        background-size: cover;
-    }
-    body > div.content#hip-hop {
-        background-image: url(images/music-banner.png);
-        background-size: cover;
-    }
-    body > div.content > div.fazer {
-      padding: 5px;
-      border-radius: 16px;
-      background-color: #000000;
-    }
+  body > div.content > div.fazer {
+    padding: 5px;
+    border-radius: 16px;
+    background-color: #000000;
+  }
+  body > div.contcat {
+    text-align: center;
+  }
+  body > div.contcat > div.cat {
+    border-style: solid;
+    padding: 8px 48px;
+    border-radius: 10px;
+  }
+  body > div.contcat > div.cat > a {
+    text-decoration: none;
+    color: #ffffffcc;
+  }
 }
-/*ᵔᴥᵔ hi! i got you. đ?ŧø
+/*ᵔᴥᵔ hi! i got you. đ?*/
