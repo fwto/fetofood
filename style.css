@@ -99,9 +99,11 @@ body {
     background-color: #191919;
     padding: 8px 16px;
     display: inline-block;
+    list-style-type: none;
+    text-align: center;
   }
-  body > nav > div.dn-content {
-    display: hidden;
+  body > nav > li {
+    display: inline-block;
   }
   body > div.content {
     background-color: #191919;
@@ -159,6 +161,11 @@ body {
     width: 100%;
     background-color: #191919;
     padding: 8px 16px;
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+  }
+  body > nav > li {
     display: inline-block;
   }
   body > div.content {
@@ -218,9 +225,11 @@ body {
     background-color: #191919;
     padding: 8px 16px;
     display: inline-block;
+    list-style-type: none;
+    text-align: center;
   }
-  body > nav > div.dn-content {
-    display: hidden;
+  body > nav > li {
+    display: inline-block;
   }
   body > div.content {
     background-color: #191919;
